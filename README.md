@@ -24,7 +24,7 @@ Um script em JavaScript para baixar automaticamente contratos e certificados do 
 
 1. **Clone ou baixe o projeto:**
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/brunao97/Script-Download-Docusign
    cd docusign-downloader
    ```
 
