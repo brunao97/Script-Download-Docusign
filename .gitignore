@@ -1,0 +1,15 @@
+.env
+.private-key.pem
+.public-key.pem
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.test
+.env.production
+private.key
+node_modules
+downloads
+

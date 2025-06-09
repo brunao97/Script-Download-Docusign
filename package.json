@@ -1,0 +1,31 @@
+{
+  "name": "docusign-downloader",
+  "version": "1.0.0",
+  "description": "Script para baixar contratos e certificados do DocuSign",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect index.js",
+    "generate-key": "node utils/generate-rsa-key.js generate",
+    "check-key": "node utils/generate-rsa-key.js check",
+    "test-config": "node -e \"require('dotenv').config(); console.log('🔍 Testando configurações...'); console.log('Integration Key:', process.env.DOCUSIGN_INTEGRATION_KEY ? '✅ Definida' : '❌ Faltando'); console.log('User ID:', process.env.DOCUSIGN_USER_ID ? '✅ Definida' : '❌ Faltando'); console.log('Account ID:', process.env.DOCUSIGN_ACCOUNT_ID ? '✅ Definida' : '❌ Faltando');\"",
+    "setup-consent": "node utils/setup-consent.js",
+    "test-jwt": "node utils/test-jwt-auth.js",
+    "unlock-go-live": "node utils/unlock-go-live.js",
+    "examples": "node examples/example-usage.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "fs-extra": "^11.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "path": "^0.12.7",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["docusign", "download", "contracts", "certificates"],
+  "author": "",
+  "license": "MIT"
+} 
